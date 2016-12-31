@@ -1,0 +1,12 @@
+<div>
+    <h2>{{session.name}}</h2>
+    <h3>{{session.creatorName}}</h3>
+    <h4>{{session.abstract}}</h4>
+    <h5>{{session.level | myUppercaseFilter}}</h5>
+    <h5>{{session.duration}}</h5>
+    <h5>Votes {{session.upVoteCount}}</h5>
+    <img src="../images/upvote.png" width="30" height="30" style="margin: 20px" ng-click="upvote()"
+         alt="upvote"/>
+    <img src="../images/downvote.png" width="30" height="30" style="margin: 20px"
+         ng-click="downvote()" alt="downvote"/>
+</div>

@@ -1,0 +1,31 @@
+{
+  "id": 4,
+  "name": "Algorithms Boot Camp Event",
+  "date": "Jan 11, 2017",
+  "time": "1 PM",
+  "mainImage": "../images/bootcamp.png",
+  "location": {
+    "address": "1920 Zanker Rd #20",
+    "city": "San Jose",
+    "state": "CA",
+    "pin": "95112"
+  },
+  "sessions": [
+    {
+      "name": "ALGORITHM PROGRAMMING",
+      "creatorName": "John Gash",
+      "duration": "1 hour",
+      "level": "Intermediate",
+      "abstract": "How to design efficient algorithms",
+      "upVoteCount": 0
+    },
+    {
+      "name": "DATA STRUCTURES",
+      "creatorName": "Bruce Wayne",
+      "duration": "3 hour",
+      "level": "Intermediate",
+      "abstract": "How to properly use data structures",
+      "upVoteCount": 0
+    }
+  ]
+}

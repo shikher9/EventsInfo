@@ -1,0 +1,47 @@
+{
+  "id": 2,
+  "name": "Art Boot Camp Event",
+  "date": "Jan 17, 2017",
+  "time": "3 PM",
+  "mainImage": "../images/bootcamp.png",
+  "location": {
+    "address": "1920 Zanker Rd #20",
+    "city": "San Jose",
+    "state": "CA",
+    "pin": "95112"
+  },
+  "sessions": [
+    {
+      "name": "DRAWING FUNDAMENTALS",
+      "creatorName": "Justin Mace",
+      "duration": "1 hour",
+      "level": "Beginner",
+      "abstract": "Introduction to drawing",
+      "upVoteCount": 0
+    },
+    {
+      "name": "PHOTOSHOP FUNDAMENTALS",
+      "creatorName": "Jackie Allison",
+      "duration": "2.5 hour",
+      "level": "Intermediate",
+      "abstract": "Photoshop Essential Training",
+      "upVoteCount": 0
+    },
+    {
+      "name": "3D COAT Training",
+      "creatorName": "Professor Z",
+      "duration": "1 hour",
+      "level": "Beginner",
+      "abstract": "Intro to 3D Coat",
+      "upVoteCount": 0
+    },
+    {
+      "name": "ANIMATION IN MAYA",
+      "creatorName": "Ron Johnson",
+      "duration": "4 hour",
+      "level": "Advanced",
+      "abstract": "How to animate in Autodesk Maya",
+      "upVoteCount": 0
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Event Details</title>
+        <link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
+        <script type="text/javascript" src="lib/angular.js"></script>
+        <script type="text/javascript" src="lib/angular-route.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/filters.js"></script>
+        <script type="text/javascript" src="js/directives/eventTile.js"></script>
+        <script type="text/javascript" src="js/directives/sessionTile.js"></script>
+        <script type="text/javascript" src="js/services/EventDataService.js"></script>
+        <script type="text/javascript" src="js/controllers/EventDetailsController.js"></script>
+        <script type="text/javascript" src="js/controllers/EditEventController.js"></script>
+        <script type="text/javascript" src="js/controllers/EventsController.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body ng-app="app">
+        <div class="wrapper">
+            <nav>
+                <a href="#/events">Events</a>
+                <a href="#/addEvent">Add Event</a>
+            </nav>
+            <div ng-view></div>
+        </div>
+    </body>
+</html>

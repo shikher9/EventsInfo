@@ -1,0 +1,24 @@
+<div class="wrapper">
+    <img ng-src="{{event.mainImage}}" height="150" style="display: block;margin: 0 auto;">
+    <div class="eventInfo">
+        <h1>{{event.name | uppercase}}</h1>
+        {{event.date}},
+        {{event.time}}<br>
+        {{event.location.address}}, {{event.location.city}}, {{event.location.state}}, {{event.location.pin}}
+    </div>
+    <div class="eventInfo" style="font-size: 1.6rem;">BROWSE THE SESSIONS</div>
+    <div class="eventInfo">
+        Filter sessions by difficulty
+        <select ng-model="query.level" style="padding: 10px;margin-left: 20px;">
+            <option value="" selected>ALL</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+        </select>
+    </div>
+    <div class="sessionInfo boxShadowBig"
+         ng-repeat="session in event.sessions | orderBy:sortorder | filter:query">
+        <session-tile session-data="session" upvote="upVoteSession(session)"
+                      downvote="downVoteSession(session)"></session-tile>
+    </div>
+</div>

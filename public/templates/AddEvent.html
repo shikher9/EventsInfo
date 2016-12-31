@@ -1,0 +1,34 @@
+<div class="wrapper">
+    <div style="width: 100%">
+        <form>
+            <h2 style="color: white;font-weight: bold;margin: 20px;">Add Event Details</h2>
+            <label for="eventName">Event Name </label>
+            <input id="eventName" type="text" placeholder="Enter the name of the event"
+                   ng-model="event.name" required><br>
+            <label for="eventDate">Event Date </label>
+            <input id="eventDate" type="date" placeholder="Enter the date of the event"
+                   ng-model="event.date" required><br>
+            <label for="eventTime">Event Time </label>
+            <input id="eventTime" type="text" placeholder="Enter the time of the event"
+                   ng-model="event.time" required><br>
+            <label for="eventAddress">Event Address </label>
+            <input id="eventAddress" type="text" placeholder="Enter the address of the event"
+                   ng-model="event.location.address" required><br>
+            <label for="eventCity">Event City </label>
+            <input id="eventCity" type="text" placeholder="Enter the city of the event"
+                   ng-model="event.location.city" required><br>
+            <label for="eventState">Event State </label>
+            <input id="eventState" type="text" placeholder="Enter the state of the event"
+                   ng-model="event.location.state" required><br>
+            <label for="eventPin">Event Pin </label>
+            <input id="eventPin" type="text" placeholder="Enter the pin of the event"
+                   ng-model="event.location.pin" required><br>
+            <label for="eventMainImage">Event Image </label>
+            <input id="eventMainImage" type="text" placeholder="Enter the url of the event image"
+                   ng-model="event.mainImage" required><br>
+            <img ng-src="{{event.mainImage}}" style="width: 100%;">
+            <button ng-click="saveEvent(event)">SAVE</button>
+            <button ng-click="cancelEvent(event)">CANCEL</button>
+        </form>
+    </div>
+</div>

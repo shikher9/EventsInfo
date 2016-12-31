@@ -1,0 +1,5 @@
+<div class="wrapper" style="display: flex;flex-wrap: wrap;justify-content: center">
+    <div ng-repeat="event in events" class="eventInfo boxShadowBig" style="display: inline-block;margin: 20px;">
+        <event-tile event-data="event" ng-click="goToEventDetails(event.id)"></event-tile>
+    </div>
+</div>

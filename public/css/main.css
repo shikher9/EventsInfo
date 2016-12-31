@@ -1,0 +1,165 @@
+body {
+    font-family: 'Cantarell', sans-serif;
+    background: url(../images/brick-wall.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    font-size: 62.5%; /* 10px */
+}
+
+nav {
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f7be99;
+}
+
+.wrapper {
+    font-size: 1rem;
+    width: 100%;
+}
+
+.eventInfo {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+}
+
+.eventInfo:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f7be99;
+}
+
+.sessionInfo {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    margin: 20px;
+    transition-property: background-color, color, transform;
+    transition-duration: 0.5s;
+}
+
+.sessionInfo:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #f7be99;
+    transform: scale(1.01, 1.01);
+}
+
+.sessionInfo img:hover {
+    transition-property: background-color, color, transform;
+    transition-duration: 0.5s;
+}
+
+.sessionInfo img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.boxShadowBig {
+    border: 1px solid rgba(103, 103, 103, 0.8);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 20px rgba(103, 103, 103, 0.5);
+}
+
+.voteButton {
+    padding: 5px;
+    font-size: 0.8rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(103, 103, 103, 0.4);
+    margin-right: 20px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition-property: background-color, color, border;
+    transition-duration: 0.5s;
+}
+
+.voteButton:hover {
+    color: #f7be99;
+    border: 2px solid rgba(103, 103, 103, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*
+    Allow angular.js to be loaded in body, hiding cloaked elements until
+    templates compile.  The !important is important given that there may be
+    other selectors that are more specific or come later and might alter display.
+*/
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+    display: none !important;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    padding: 10px;
+    margin: 20px;
+    width: 30%;
+}
+
+form label {
+    color: white;
+    margin: 10px;
+    display: inline-block;
+    width: 30%;
+}
+
+form input {
+    padding: 10px;
+    margin: 10px;
+}
+
+form input[type="submit"], button {
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    form {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    form {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    form {
+        width: 80%;
+    }
+}
+
+

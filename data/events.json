@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "name": "Coding Boot Camp Event",
+      "date": "Jan 13, 2017",
+      "time": "4 PM"
+    },
+    {
+      "id": 2,
+      "name": "Art Boot Camp Event",
+      "date": "Jan 17, 2017",
+      "time": "3 PM"
+    },
+    {
+      "id": 3,
+      "name": "Design Boot Camp Event",
+      "date": "Jan 15, 2017",
+      "time": "2 PM"
+    },
+    {
+      "id": 4,
+      "name": "Algorithms Boot Camp Event",
+      "date": "Jan 11, 2017",
+      "time": "1 PM"
+    }
+  ]
+}
